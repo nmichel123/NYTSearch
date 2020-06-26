@@ -44,7 +44,10 @@ header {
     justify-content: center;
 }
 
-
+.result-divs {
+    min-height: 20px;
+    background-color: #999;
+}
 #search-parameters {
     width: 840px;
     display: flex;
@@ -56,3 +59,5 @@ header {
     margin: 10px 20px;
 }
 
+#top-articles {
+}
