@@ -8,7 +8,7 @@ $.ajax({
     data: {
         'q': queryString,
         'response-format': "jsonp",
-        'api-key': nytApiKey,
+        'api-key': "TONEZkf1tgn51V71vK11iTJ1gyMdmxqR",
         'callback': 'svc_search_v2_articlesearch'
     },
         success: function(data) {
