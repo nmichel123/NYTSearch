@@ -31,7 +31,7 @@ header {
 
 .container {
     display: border-box;
-    border: 3x solid #666;
+    border: 3px solid #666;
     border-radius: 5px;
     width: 840px;
     height: auto;
@@ -41,8 +41,10 @@ header {
 #search-parameters {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: auto;
     align-items: left;
     justify-content: space-evenly;
+    padding: 20px;
+    margin: 10px 20px;
 }
 
