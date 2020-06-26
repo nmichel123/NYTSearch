@@ -12,5 +12,7 @@ $.ajax({
         success: function(data) {
         // passed function object for data processing 
         console.log(data);
+
+        
     }
 });

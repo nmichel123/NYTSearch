@@ -25,20 +25,28 @@ body{
 header {
     background-color: var(--page-header-bgColor);
     color: var(--page-header-txtColor);
+    height: 100px;
     text-align: center;
     justify-content: center;
+    padding: 20px;
 }
 
-.container {
+
+.container, .results-feed {
     display: border-box;
     border: 3px solid #666;
     border-radius: 5px;
     width: 840px;
     height: auto;
+    min-height: 80px;
     padding: auto;
+    margin-top: 40px;
+    justify-content: center;
 }
 
+
 #search-parameters {
+    width: 840px;
     display: flex;
     flex-direction: column;
     width: auto;
