@@ -31,16 +31,20 @@ header {
 
 .container {
     display: border-box;
-    border: 2px solid #666;
-    border-radius: 15px;
+    border: 3px solid #666;
+    border-radius: 5px;
     width: 840px;
     height: auto;
     padding: auto;
 }
 
 #search-parameters {
-    width: 90%;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: left;
     justify-content: space-evenly;
+    padding: 20px;
+    margin: 10px 20px;
 }
 
