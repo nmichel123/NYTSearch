@@ -1,6 +1,6 @@
 var article = $(this).attr("data-name");
 var queryUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + article + "&api-key=TONEZkf1tgn51V71vK11iTJ1gyMdmxqR";
-
+var queryString = "";
 $.ajax({
 
     'type': 'GET',
