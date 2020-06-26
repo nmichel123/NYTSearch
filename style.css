@@ -45,8 +45,11 @@ header {
 }
 
 .result-divs {
+    height: 120px;
     min-height: 20px;
-    background-color: #999;
+    background-color:white smoke;
+    padding: auto;
+    margin: 10px 20px;
 }
 #search-parameters {
     width: 840px;

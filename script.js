@@ -18,12 +18,12 @@ $.ajax({
         // passed function object for data processing 
         console.log(data);
 
-        result = data;
+            renderSearch(data);
     }
 });
 
 //retrieve data from ajax
-function renderSearch() {
+function renderSearch(data) {
     
     for(i = 0; i < numResults; i++){
         //then create div's recursively
@@ -33,7 +33,7 @@ function renderSearch() {
         newDiv.addClass("result-divs");
 
         //popululate search result divs with retreived data
-        var result = "test-" + i //add in text content HERE
+        var result = data.response.docs[i].abstract //add in text content HERE
         
         var pTag = $('<p>');
         var stuff = pTag.text(result);
