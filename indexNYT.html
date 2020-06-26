@@ -32,8 +32,27 @@
     <div class="results-feed" id="top-articles">
         <!--search queried article data goes here-->
     </div>
+
+<script type="text/javascript">
+var numResults = 10;
+
+for(i = 0; i < numResults; i++){
+    var newDiv = $('<div>');
+
+    newDiv.attr("id", "search-result-"+i);
+    newDiv.addClass("result-divs");
+
+    var result = "test-" + i //add in text content
     
+    var pTag = $('<p>');
+    var stuff = pTag.text(result);
+
+    var push = newDiv.append(stuff);
+
+    $('#top-articles').append(push);
+}
+</script>
 <script src="script.js"></script>
-<scrip src="ajax.js"></scrip>
+<script src="ajax.js"></script>
 </body>
 </html>
