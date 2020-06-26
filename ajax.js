@@ -1,11 +1,12 @@
 $.ajax({
 
     'type': 'GET',
-    'url': queryurl,
+    'url': queryUrl,
+    method: "GET",
     data: {
         'q': queryString,
         'response-format': "jsonp",
-        'api-key': nytApiKey,
+        'api-key': "TONEZkf1tgn51V71vK11iTJ1gyMdmxq",
         'callback': 'svc_search_v2_articlesearch'
     },
         success: function(data) {
