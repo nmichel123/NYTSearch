@@ -4,7 +4,7 @@ var queryUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + a
 $.ajax({
 
     'type': 'GET',
-    'url': queryurl,
+    'url': queryUrl,
     data: {
         'q': queryString,
         'response-format': "jsonp",
