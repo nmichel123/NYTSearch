@@ -1,6 +1,7 @@
 var article = $(this).attr("data-name");
 var queryUrl = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + article + "&api-key=TONEZkf1tgn51V71vK11iTJ1gyMdmxqR";
 var queryString = "";
+var numResults = 10;
 $.ajax({
 
     'type': 'GET',
@@ -19,8 +20,27 @@ $.ajax({
     }
 });
 
-//retrieve data from ajax 
+//retrieve data from ajax
+function renderSearch() {
+    
+    for(i = 0; i < numResults; i++){
+        //then create div's recursively
+        var newDiv = $('<div>');
 
-//then create div's recursively
+        newDiv.attr("id", "search-result-"+i);
+        newDiv.addClass("result-divs");
 
-//popululate search result divs with retreived data
+        //popululate search result divs with retreived data
+        var result = "test-" + i //add in text content HERE
+        
+        var pTag = $('<p>');
+        var stuff = pTag.text(result);
+
+        var push = newDiv.append(stuff);
+
+        $('#top-articles').append(push);
+    }
+}
+
+
+
